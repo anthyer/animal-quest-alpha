@@ -19,6 +19,7 @@ public class MainManager : MonoBehaviour
 
         Physics.gravity *= gravityModifier;
         instance = this;
+        Application.targetFrameRate = 60;
         DontDestroyOnLoad(gameObject);               
     }
 }
